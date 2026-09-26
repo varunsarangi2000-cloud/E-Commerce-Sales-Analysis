@@ -1,378 +1,208 @@
-\# E-Commerce Sales \& Profitability Analysis
+# E-Commerce Sales & Profitability Analysis
 
+## 📊 Project Overview
 
+This project analyzes a synthetic e-commerce dataset containing **10,000 orders** to evaluate sales performance, profitability, customer behavior, regional performance, discount impact, and order fulfillment.
 
-\## 📊 **Project Overview**
-
-
-
-This project analyzes a synthetic e-commerce dataset containing \*\*10,000 orders\*\* to evaluate sales performance, profitability, customer behavior, regional performance, discount impact, and order fulfillment.
-
-
-
-The project uses \*\*Microsoft Excel\*\* for initial analysis and validation and \*\*Microsoft Power BI\*\* for data modeling, DAX calculations, interactive visualization, and dashboard development.
-
-
+The project uses **Microsoft Excel** for initial analysis and validation and **Microsoft Power BI** for data modeling, DAX calculations, interactive visualization, and dashboard development.
 
 The final Power BI report consists of three analytical pages:
 
+- **Executive Overview**
+- **Product & Customer Analysis**
+- **Geographic & Operations**
 
+---
 
-\* \*\*Executive Overview\*\*
-
-\* \*\*Product \& Customer Analysis\*\*
-
-\* \*\*Geographic \& Operations\*\*
-
-
-
-\## 🎯 **Business Problem**
-
-
+## 🎯 Business Problem
 
 The objective of this project is to transform raw e-commerce transaction data into actionable business insights.
 
-
-
 The analysis focuses on answering the following questions:
 
+1. How are overall sales and profitability performing?
+2. Which product categories and products contribute the most sales and profit?
+3. Which customer segments generate the highest sales and average order value?
+4. How does discount level relate to profit margin?
+5. Which regions and states generate the most sales?
+6. How efficiently are orders being fulfilled?
+7. What patterns can be identified in shipping time, cancellations, returns, and pending orders?
 
+---
 
-1\. How are overall sales and profitability performing?
+## 📁 Dataset
 
-2\. Which product categories and products contribute the most sales and profit?
-
-3\. Which customer segments generate the highest sales and average order value?
-
-4\. How does discount level relate to profit margin?
-
-5\. Which regions and states generate the most sales?
-
-6\. How efficiently are orders being fulfilled?
-
-7\. What patterns can be identified in shipping time, cancellations, returns, and pending orders?
-
-
-
-\## 📁 **Dataset**
-
-
-
-The dataset contains \*\*10,000 synthetic e-commerce orders\*\* created for this portfolio project.
-
-
+The dataset contains **10,000 synthetic e-commerce orders** created specifically for this portfolio project.
 
 The data includes information related to:
 
+- Orders
+- Customers
+- Products
+- Categories
+- Regions and states
+- Customer segments
+- Sales
+- Profit
+- Discounts
+- Order status
+- Shipping time
 
+The dataset is synthetic and does not represent real customer transactions.
 
-\* Orders
+---
 
-\* Customers
+## 🛠️ Tools & Technologies
 
-\* Products
+| Tool | Purpose |
+|---|---|
+| **Microsoft Excel** | Initial data exploration, calculations, and validation |
+| **Microsoft Power BI** | Data modeling, analysis, visualization, and dashboard development |
+| **Power Query** | Data preparation and transformation |
+| **DAX** | KPI calculations and analytical measures |
 
-\* Categories
+### Key Skills Demonstrated
 
-\* Regions and states
+- Data cleaning and preparation
+- Exploratory data analysis
+- Data modeling
+- Relationship management
+- DAX measures
+- KPI development
+- Interactive dashboard design
+- Business intelligence
+- Data storytelling
+- Business insight generation
 
-\* Customer segments
+---
 
-\* Sales
+## 📊 Dashboard Structure
 
-\* Profit
-
-\* Discounts
-
-\* Order status
-
-\* Shipping time
-
-
-
-The dataset was created specifically for analytical and portfolio demonstration purposes and does not represent real customer transactions.
-
-
-
-
-
-\## 🛠️ **Tools \& Technologies**
-
-
-
-| Tool                   | Purpose                                                           |
-
-| ---------------------- | ----------------------------------------------------------------- |
-
-| \*\*Microsoft Excel\*\*    | Initial data exploration, calculations, and validation            |
-
-| \*\*Microsoft Power BI\*\* | Data modeling, analysis, visualization, and dashboard development |
-
-| \*\*Power Query\*\*        | Data preparation and transformation                               |
-
-| \*\*DAX\*\*                | KPI calculations and analytical measures                          |
-
-
-
-\### Key Skills Demonstrated
-
-
-
-\* Data cleaning and preparation
-
-\* Exploratory data analysis
-
-\* Data modeling
-
-\* Relationship management
-
-\* DAX measures
-
-\* KPI development
-
-\* Interactive dashboard design
-
-\* Business intelligence
-
-\* Data storytelling
-
-\* Business insight generation
-
-
-
-\## 📊 **Dashboard Structure**
-
-
-
-\### 1. Executive Overview
-
-
+### 1. Executive Overview
 
 Provides a high-level view of business performance through:
 
+- Total Sales
+- Total Profit
+- Total Orders
+- Average Order Value
+- Profit Margin
+- Monthly Sales Trend
+- Sales by Category
+- Sales by Region
+- Order Status Distribution
 
-
-\* Total Sales
-
-\* Total Profit
-
-\* Total Orders
-
-\* Average Order Value
-
-\* Profit Margin
-
-\* Monthly Sales Trend
-
-\* Sales by Category
-
-\* Sales by Region
-
-\* Order Status Distribution
-
-
-
-\### 2. Product \& Customer Analysis
-
-
+### 2. Product & Customer Analysis
 
 Focuses on product profitability and customer behavior:
 
+- Top 10 Products by Sales
+- Top 10 Products by Profit
+- Sales by Customer Segment
+- Average Order Value by Customer Segment
+- Discount vs Profit Margin
 
-
-\* Top 10 Products by Sales
-
-\* Top 10 Products by Profit
-
-\* Sales by Customer Segment
-
-\* Average Order Value by Customer Segment
-
-\* Discount vs Profit Margin
-
-
-
-\### 3. Geographic \& Operations
-
-
+### 3. Geographic & Operations
 
 Analyzes regional performance and operational efficiency:
 
+- Top 5 States by Sales
+- Sales vs Profit — Top 5 States
+- Average Shipping Days by Region
+- Order Status by Region
 
+All three pages include interactive filters for **Category, Region, and Customer Segment**.
 
-\* Top 5 States by Sales
+---
 
-\* Sales vs Profit — Top 5 States
+## 🔍 Key Findings
 
-\* Average Shipping Days by Region
+### Sales Performance
 
-\* Order Status by Region
+- **March** recorded the highest monthly sales at approximately **₹24.50 lakh**.
+- **February** recorded the lowest monthly sales at approximately **₹17.94 lakh**.
+- Total orders analyzed: **10,000**.
+- Average Order Value: approximately **₹2,661**.
 
+### Category Performance
 
+- **Home & Kitchen** generated the highest category sales at approximately **₹72.74 lakh**.
+- Home & Kitchen also generated the highest category profit at approximately **₹28.28 lakh**.
+- **Books** recorded the highest category profit margin at approximately **52%**.
+- **Electronics** recorded the lowest category profit margin at approximately **36%**.
 
-All three pages include interactive filters for \*\*Category, Region, and Customer Segment\*\*.
+### Product Performance
 
+- **Air Fryer** recorded the highest product sales at approximately **₹28.26 lakh**.
+- Air Fryer generated approximately **₹9.87 lakh** in profit.
+- Product-level profitability varied considerably across the catalog.
 
+### Customer Performance
 
+- **New customers** generated the highest total sales at approximately **₹1.07 crore**.
+- **VIP customers** recorded the highest Average Order Value at approximately **₹2,893**.
+- The analysis demonstrates the difference between total customer contribution and average order value.
 
+### Regional Performance
 
-\## 🔍 **Key Findings**
+- **East** recorded the highest regional sales at approximately **₹91.30 lakh**.
+- **West** recorded the lowest regional sales at approximately **₹37.49 lakh**.
 
-
-
-\### Sales Performance
-
-
-
-\* \*\*March\*\* recorded the highest monthly sales at approximately \*\*₹24.50 lakh\*\*.
-
-\* \*\*February\*\* recorded the lowest monthly sales at approximately \*\*₹17.94 lakh\*\*.
-
-\* Total orders analyzed: \*\*10,000\*\*.
-
-\* Average Order Value: approximately \*\*₹2,661\*\*.
-
-
-
-\### Category Performance
-
-
-
-\* \*\*Home \& Kitchen\*\* generated the highest category sales at approximately \*\*₹72.74 lakh\*\*.
-
-\* Home \& Kitchen also generated the highest category profit at approximately \*\*₹28.28 lakh\*\*.
-
-\* \*\*Books\*\* recorded the highest category profit margin at approximately \*\*52%\*\*.
-
-\* \*\*Electronics\*\* recorded the lowest category profit margin at approximately \*\*36%\*\*.
-
-
-
-\### Product Performance
-
-
-
-\* \*\*Air Fryer\*\* generated the highest product sales at approximately \*\*₹28.26 lakh\*\*.
-
-\* Air Fryer generated approximately \*\*₹9.87 lakh\*\* in profit.
-
-\* Product-level profitability varied considerably across the catalog.
-
-
-
-\### Customer Performance
-
-
-
-\* \*\*New customers\*\* generated the highest total sales at approximately \*\*₹1.07 crore\*\*.
-
-\* \*\*VIP customers\*\* recorded the highest Average Order Value at approximately \*\*₹2,893\*\*.
-
-\* The analysis demonstrates the difference between total customer contribution and average order value.
-
-
-
-\### Regional Performance
-
-
-
-\* \*\*East\*\* generated the highest regional sales at approximately \*\*₹91.30 lakh\*\*.
-
-\* \*\*West\*\* generated the lowest regional sales at approximately \*\*₹37.49 lakh\*\*.
-
-
-
-\### Discount \& Profitability
-
-
+### Discount & Profitability
 
 Profit margin decreased across the observed discount levels:
 
-
-
-\*\*46% → 44% → 41% → 37% → 34% → 29%\*\*
-
-
+**46% → 44% → 41% → 37% → 34% → 29%**
 
 from 0% to 25% discount.
 
-
-
 This represents an observed association within the dataset rather than proof that discounting alone caused the decline.
 
+### Operations
 
+- Average shipping time: **3.47 days**
+- Most common shipping time: **3 days**
+- Delivered orders: **84%**
+- Returned orders: **7%**
+- Cancelled orders: **6%**
+- Pending orders: **3%**
 
-\### Operations
+---
 
+## 💡 Business Recommendations
 
-
-\* Average shipping time: \*\*3.47 days\*\*
-
-\* Most common shipping time: \*\*3 days\*\*
-
-\* Delivered orders: \*\*84%\*\*
-
-\* Returned orders: \*\*7%\*\*
-
-\* Cancelled orders: \*\*6%\*\*
-
-\* Pending orders: \*\*3%\*\*
-
-
-
-\## 💡 **Business Recommendations**
-
-
-
-\### 1. Review Discount Strategy
-
-
+### 1. Review Discount Strategy
 
 Evaluate whether higher discount levels generate enough additional sales to compensate for the observed reduction in profit margin.
 
-
-
-\### 2. Investigate Electronics Profitability
-
-
+### 2. Investigate Electronics Profitability
 
 Electronics recorded the lowest category profit margin. Further analysis could examine supplier costs, pricing, discounts, shipping costs, and product-level profitability.
 
+### 3. Protect High-Performing Categories
 
+Home & Kitchen is a major contributor to both sales and profit. Inventory availability and promotional investment could be evaluated for its strongest products.
 
-\### 3. Protect High-Performing Categories
-
-
-
-Home \& Kitchen is a major contributor to both sales and profit. Inventory availability and promotional investment could be evaluated for its strongest products.
-
-
-
-\### 4. Develop VIP Customer Opportunities
-
-
+### 4. Develop VIP Customer Opportunities
 
 VIP customers have the highest AOV but represent a much smaller sales contribution. Customer retention, cross-selling, and premium-product strategies could be explored.
 
+### 5. Investigate Regional Differences
 
+The difference between East and West sales warrants further investigation into customer volume, product mix, marketing activity, pricing, and regional demand.
 
-\### 5. Investigate Regional Differences
-
-
-
-The significant difference between East and West sales warrants further investigation into customer volume, product mix, marketing activity, pricing, and regional demand.
-
-
-
-\### 6. Monitor Fulfillment Performance
-
-
+### 6. Monitor Fulfillment Performance
 
 With 84% of orders delivered and the remaining orders distributed across cancelled, returned, and pending statuses, operational monitoring could help identify opportunities to improve fulfillment performance.
 
+---
 
+## 🧩 Data Model
 
+The Power BI report uses a relational data model connecting the main business entities:
 
-
-
-
+```text
+Customers
+    │
+    ▼
+  Orders ───────────► Products
