@@ -201,7 +201,7 @@ With 84% of orders delivered and the remaining orders distributed across cancell
 
 The Power BI report uses a relational data model connecting the main business entities:
 
-```text
+```text 
 
 Customers
     ▼
@@ -219,7 +219,7 @@ Relationships between the tables were established in Power BI to support cross-t
 
 ## 🧮 Key DAX Measures
 
-### Total Sales
+###Total Sales
 ```DAX
 Total Sales = SUM(Orders[Sales])
 ```
@@ -287,7 +287,7 @@ DIVIDE([Total Profit], [Total Sales])
 
 ### Geographic & Operations
 
-![Geographic & Operations](Screenshots/Geographic-Operations.png)
+![Geographic & Operations](Screenshots/Geographic-Operation.png)
 
 ## 🎓 Skills Demonstrated
 
