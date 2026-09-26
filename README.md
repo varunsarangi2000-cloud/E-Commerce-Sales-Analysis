@@ -202,7 +202,136 @@ With 84% of orders delivered and the remaining orders distributed across cancell
 The Power BI report uses a relational data model connecting the main business entities:
 
 ```text
+
 Customers
-    │
     ▼
   Orders ───────────► Products
+
+### Main Tables
+
+| Table | Purpose |
+|---|---|
+| **Orders** | Transaction-level sales, profit, discount, status, region, and shipping information |
+| **Customers** | Customer-related information and customer segmentation |
+| **Products** | Product and category information |
+
+Relationships between the tables were established in Power BI to support cross-table analysis and interactive filtering.
+
+## 🧮 Key DAX Measures
+
+### Total Sales
+```DAX
+Total Sales = SUM(Orders[Sales])
+```
+
+### Total Profit
+```DAX
+Total Profit = SUM(Orders[Profit])
+```
+### Total Orders
+```DAX
+Total Orders = COUNTROWS(Orders)
+```
+### Average Order Value
+```DAX
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+```
+
+### Profit Margin
+```DAX
+Profit Margin =
+DIVIDE([Total Profit], [Total Sales])
+```
+
+> Note: The Power BI file should be treated as the source of truth if measure names or implementations differ.
+
+## 🔎 Analytical Approach
+
+1. **Data Generation & Preparation**
+   - Created a 10,000-row synthetic e-commerce dataset.
+   - Organized data into Orders, Customers, and Products tables.
+
+2. **Exploratory Data Analysis**
+   - Analyzed sales, profit, orders, AOV, and profit margin.
+   - Compared performance across months, categories, products, regions, states, and customer segments.
+
+3. **Data Modeling**
+   - Created relationships between Orders, Customers, and Products in Power BI.
+   - Built a relational model to support interactive analysis.
+
+4. **KPI Development**
+   - Created DAX measures for Sales, Profit, Orders, AOV, and Profit Margin.
+
+5. **Dashboard Development**
+   - Built three interactive Power BI pages.
+   - Added slicers for Category, Region, and Customer Segment.
+
+6. **Validation**
+   - Compared key Power BI outputs against the initial Excel analysis.
+   - Tested slicers and cross-filtering to verify dashboard behavior.
+
+7. **Business Interpretation**
+   - Identified major sales and profitability patterns.
+   - Translated analytical findings into potential business actions.
+
+## 📸 Dashboard Preview
+
+### Executive Overview
+
+![Executive Overview](Screenshot/Executive-Overview.png)
+
+### Product & Customer Analysis
+
+![Product & Customer Analysis](Screenshot/Product-Customer-Analysis.png)
+
+### Geographic & Operations
+
+![Geographic & Operations](Screenshot/Geographic-Operations.png)
+
+## 🎓 Skills Demonstrated
+
+### Data Analysis
+
+- Exploratory Data Analysis
+- Sales and profitability analysis
+- Customer segmentation analysis
+- Product performance analysis
+- Regional analysis
+- Discount and margin analysis
+- Operational performance analysis
+
+### Power BI
+
+- Data modeling
+- Table relationships
+- DAX measures
+- KPI development
+- Interactive slicers
+- Cross-filtering
+- Dashboard design
+- Data storytelling
+
+### Business Analysis
+
+- Identifying performance drivers
+- Comparing segments and regions
+- Translating data into business insights
+- Developing data-driven recommendations
+
+## ⚠️ Limitations
+
+- The dataset is synthetic and does not represent real customer or business transactions.
+- The analysis is descriptive and identifies patterns within the available dataset.
+- The observed relationship between discount levels and profit margin should not be interpreted as proof of causation.
+- Further analysis using real business data could incorporate customer acquisition cost, inventory costs, shipping costs, marketing spend, and customer lifetime value.
+
+## 🏁 Project Outcome
+
+This project demonstrates the complete workflow of a Data Analyst:
+
+**Raw Data → Data Preparation → Exploratory Analysis → Data Modeling → DAX → Visualization → Business Insights → Recommendations**
+
+The final dashboard transforms 10,000 e-commerce transactions into an interactive analytical solution that allows users to explore sales, profitability, products, customers, regions, discounts, and order fulfillment.
+
+The project demonstrates practical skills in both **technical data analysis** and **business-oriented data storytelling**.
