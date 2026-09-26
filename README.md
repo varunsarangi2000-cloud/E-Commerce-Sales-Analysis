@@ -287,7 +287,7 @@ DIVIDE([Total Profit], [Total Sales])
 
 ### Geographic & Operations
 
-![Geographic & Operations](Screenshot/Geographic-Operations.png)
+![Geographic & Operations](Screenshots/Geographic-Operations.png)
 
 ## 🎓 Skills Demonstrated
 
